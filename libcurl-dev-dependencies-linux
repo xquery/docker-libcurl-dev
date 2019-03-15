@@ -31,7 +31,6 @@ RUN apt-get update && \
                    libnghttp2-dev \
                    libssl-dev \
                    valgrind \
-                   bash-completion \
                    cmake
 
 RUN apt-get install -y openssh-server
