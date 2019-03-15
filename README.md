@@ -1,5 +1,5 @@
 ------------------------------------------------------
-curl dev nix docker container
+curl dev docker container
 ------------------------------------------------------
 
 Docker image containing dependencies required for [libcurl](https://curl.haxx.se) development.
