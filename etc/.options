@@ -1,0 +1,1 @@
+--with-ssl --disable-shared --disable-ldap
