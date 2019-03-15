@@ -17,6 +17,10 @@ RUN nix-env --install libtool
 RUN nix-env --install --attr nixpkgs.m4
 RUN nix-env --install --attr nixpkgs.libiconv
 RUN nix-env --install glib
-
+RUN nix-env --install --attr nixpkgs.binutils
+RUN nix-env --install --attr nixpkgs.clang
+RUN nix-env --install --attr nixpkgs.gnumake
+RUN nix-env --install --attr nixpkgs.c-ares
+RUN nix-env --install --attr nixpkgs.llvmPackages.libclang
 RUN nix-collect-garbage -d
 RUN nix-env -u

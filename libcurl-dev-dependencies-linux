@@ -1,0 +1,38 @@
+FROM ubuntu:xenial
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get clean && apt-get update && apt-get install -y locales
+
+RUN locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+RUN apt-get update && \
+    apt install -y lcov \
+                   clang \
+                   libev-dev \
+                   build-essential \
+                   libc-ares-dev \
+                   libstdc++-4.8-dev \
+                   libidn2-0-dev \
+                   libssh2-1-dev \
+                   git \
+                   make \
+                   autotools-dev \
+                   autoconf \
+                   libtool \
+                   curl \
+                   automake \
+                   m4 \
+                   libgtk2.0-dev \
+                   emacs \
+                   libnghttp2-dev \
+                   libssl-dev \
+                   valgrind \
+                   bash-completion \
+                   cmake
+
+RUN apt-get install -y openssh-server
+RUN mkdir -p /root/.ssh && chown root.root /root && chmod 700 /root/.ssh

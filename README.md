@@ -2,19 +2,17 @@
 curl dev nix docker container
 ------------------------------------------------------
 
-Docker image containing all deps required for libcurl development.
+Docker image containing dependencies required for [libcurl](https://curl.haxx.se) development.
 
-The docker image
+The docker image is hosted at [docker hub](https://hub.docker.com) here:
 
- [jamesfuller/libcurl-dev-dependencies-nix](https://cloud.docker.com/repository/docker/jamesfuller/libcurl-dev-dependencies-nix)
+[jamesfuller/libcurl-dev-dependencies-linux](https://cloud.docker.com/repository/docker/jamesfuller/libcurl-dev-dependencies-linux)
 
-contains all the dependencies required to build and test libcurl.
 
-To generate an image with your own fork of https://github.com/curl/curl
-
+The following dockerfile illustrates how to create an image with your own fork of [https://github.com/curl/curl](https://github.com/curl/curl)
 
 ```
-FROM jamesfuller/libcurl-dev-dependencies-nix
+FROM jamesfuller/libcurl-dev-dependencies-linux
 
 ENV CURL_SOURCE_DIR=/src/curl
 ENV CURL_GIT_REPO=https://github.com/<your github >/curl.git
@@ -29,3 +27,6 @@ RUN cd /src/curl && ./buildconf
 
 CMD ["/bin/bash"]
 ```
+
+
+**Note**: nix images are experimental (and likely to not work)

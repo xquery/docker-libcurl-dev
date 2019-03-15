@@ -1,4 +1,4 @@
-FROM jamesfuller/libcurl-dev-dependencies-nix
+FROM jamesfuller/libcurl-dev-dependencies-linux
 
 ENV CURL_SOURCE_DIR=/src/curl
 ENV CURL_GIT_REPO=https://github.com/xquery/curl.git
