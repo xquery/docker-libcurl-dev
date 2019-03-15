@@ -6,7 +6,7 @@ Docker image containing all deps required for libcurl development.
 
 The docker image
 
- jamesfuller/libcurl-dev-dependencies-nix
+ [jamesfuller/libcurl-dev-dependencies-nix](https://cloud.docker.com/repository/docker/jamesfuller/libcurl-dev-dependencies-nix)
 
 contains all the dependencies required to build and test libcurl.
 
