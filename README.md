@@ -1,6 +1,6 @@
-------------------------------------------------------
-curl dev docker container
-------------------------------------------------------
+-----------------------------------------
+libcurl dev docker image
+-----------------------------------------
 
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/jamesfuller/libcurl-dev-dependencies-linux.svg)](https://cloud.docker.com/repository/docker/jamesfuller/libcurl-dev-dependencies-linux/builds)
 
@@ -30,5 +30,6 @@ RUN cd /src/curl && ./buildconf
 CMD ["/bin/bash"]
 ```
 
+The image is intentionally simple eg. you may want to mount a volume instead of embed git repo inside the image itself.
 
 **Note**: nix images are experimental (and likely to not work)
