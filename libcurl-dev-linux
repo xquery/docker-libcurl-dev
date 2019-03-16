@@ -12,7 +12,10 @@ COPY etc/.options ${CURL_SOURCE_DIR}
 
 COPY etc/config ${CURL_SOURCE_DIR}/.git
 
-#RUN cd /src/curl && ./buildconf
-#RUN cd /src/curl && cat .options | xargs ./configure
+RUN cd /src/curl && ./buildconf
+RUN cd /src/curl && cat .options | xargs ./configure
+
+RUN apt-get install -y openssh-server
+RUN mkdir -p /root/.ssh && chown root.root /root && chmod 700 /root/.ssh
 
 CMD ["/bin/sh"]

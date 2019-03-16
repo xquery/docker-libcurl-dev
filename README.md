@@ -25,6 +25,9 @@ RUN chown -R root:root ${CURL_SOURCE_DIR}
 
 RUN git clone ${CURL_GIT_REPO} ${CURL_SOURCE_DIR}
 
+RUN apt-get install -y openssh-server
+RUN mkdir -p /root/.ssh && chown root.root /root && chmod 700 /root/.ssh
+
 RUN cd /src/curl && ./buildconf
 
 CMD ["/bin/bash"]

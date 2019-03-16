@@ -32,6 +32,3 @@ RUN apt-get update && \
                    libssl-dev \
                    valgrind \
                    cmake
-
-RUN apt-get install -y openssh-server
-RUN mkdir -p /root/.ssh && chown root.root /root && chmod 700 /root/.ssh
