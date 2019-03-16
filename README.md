@@ -2,8 +2,7 @@
 curl dev docker container
 ------------------------------------------------------
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/jamesfuller/libcurl-dev-dependencies-linux.svg)](https://cloud.docker.com/repository/docker/jamesfuller/libcurl-dev-dependencies-linux)
-
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/jamesfuller/libcurl-dev-dependencies-linux.svg)](https://cloud.docker.com/repository/docker/jamesfuller/libcurl-dev-dependencies-linux/builds)
 
 Docker image containing dependencies required for [libcurl](https://curl.haxx.se) development.
 
