@@ -8,8 +8,7 @@ Docker image containing dependencies required for [libcurl](https://curl.haxx.se
 
 The docker image is hosted at [docker hub](https://hub.docker.com) here:
 
-[jamesfuller/libcurl-dev-dependencies-linux](https://cloud.docker.com/repository/docker/jamesfuller/libcurl-dev-dependencies-linux)
-
+[jamesfuller/libcurl-dev-dependencies-linux](https://hub.docker.com/r/jamesfuller/libcurl-dev-dependencies-linux)
 
 The following dockerfile illustrates how to create an image with your own fork of [https://github.com/curl/curl](https://github.com/curl/curl)
 
